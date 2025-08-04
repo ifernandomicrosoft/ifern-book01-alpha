@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeuxDeux Clone - Tests</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+        .test-result {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .test-pass { background: #d4edda; color: #155724; }
+        .test-fail { background: #f8d7da; color: #721c24; }
+        .test-info { background: #d1ecf1; color: #0c5460; }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+        }
+        button:hover { background: #0056b3; }
+        h1 { color: #2c3e50; }
+        h2 { color: #34495e; }
+    </style>
+</head>
+<body>
+    <h1>TeuxDeux Clone - Functionality Tests</h1>
+    
+    <div class="test-container">
+        <h2>Manual Test Instructions</h2>
+        <p>Open <a href="index.html" target="_blank">index.html</a> and verify the following functionality:</p>
+        
+        <h3>✅ Core Features to Test:</h3>
+        <ul>
+            <li><strong>Weekly Layout:</strong> Verify 7 day columns with current week dates</li>
+            <li><strong>Add Tasks:</strong> Type in any "Add a task..." field and press Enter</li>
+            <li><strong>Complete Tasks:</strong> Click checkboxes to mark tasks as completed</li>
+            <li><strong>Edit Tasks:</strong> Click on task text to edit inline</li>
+            <li><strong>Delete Tasks:</strong> Hover over tasks and click "×" button</li>
+            <li><strong>Drag & Drop:</strong> Drag tasks between day columns</li>
+            <li><strong>Clear Functions:</strong> Test "Clear Completed" and "Clear All" buttons</li>
+            <li><strong>Persistence:</strong> Refresh page and verify tasks are saved</li>
+        </ul>
+    </div>
+
+    <div class="test-container">
+        <h2>Automated JavaScript Tests</h2>
+        <button onclick="runTests()">Run Tests</button>
+        <button onclick="clearResults()">Clear Results</button>
+        <div id="test-results"></div>
+    </div>
+
+    <div class="test-container">
+        <h2>Performance Tests</h2>
+        <button onclick="runPerformanceTests()">Run Performance Tests</button>
+        <div id="performance-results"></div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>

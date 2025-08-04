@@ -1,0 +1,36 @@
+{
+  "name": "teuxdeux-clone",
+  "version": "1.0.0",
+  "description": "A faithful recreation of the minimalist TeuxDeux to-do list application, built to demonstrate GitHub Copilot capabilities",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "open test.html",
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "todo",
+    "teuxdeux",
+    "productivity",
+    "github-copilot",
+    "vanilla-js",
+    "drag-drop",
+    "minimal",
+    "clone"
+  ],
+  "author": "GitHub Copilot Demo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ifernandomicrosoft/ifern-book01-alpha"
+  },
+  "homepage": "https://github.com/ifernandomicrosoft/ifern-book01-alpha",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
